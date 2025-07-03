@@ -11,5 +11,5 @@ export const ROUTES = {
 
 
 export const ROUTES_API = {
-
+  DIFFICULTIES: "api/difficulties",
 };
