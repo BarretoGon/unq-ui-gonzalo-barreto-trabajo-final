@@ -5,11 +5,13 @@ export const API = {
 
 export const ROUTES = {
   HOME: "/",
-
+  DIFFICULTIES: "/difficulties",
+  DIFFICULTIES_ID: "/difficulties/:difficultyId",
 
 };
 
 
 export const ROUTES_API = {
   DIFFICULTIES: "api/difficulties",
+  CHECKWORD: "api/checkWord",
 };

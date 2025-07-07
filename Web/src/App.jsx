@@ -3,6 +3,8 @@ import { ROUTES } from "./constants";
 import { BrowserRouter, Routes, Route } from "react-router";
 
 import Home from "./pages/Home.jsx";
+import Game from "./pages/Game/Game.jsx";
+
 
 const App = () => {
 
@@ -13,6 +15,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
           <Route path={ROUTES.HOME} element={<Home />} />
+          <Route path={ROUTES.DIFFICULTIES_ID} element={<Game />} />
       </Routes>
     </BrowserRouter>
     </>

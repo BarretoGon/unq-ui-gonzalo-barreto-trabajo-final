@@ -1,4 +1,5 @@
 import axios from "axios";
+import { errorMessage } from "../utilities/error_message";
 
 import { API, ROUTES_API } from "../constants";
 
