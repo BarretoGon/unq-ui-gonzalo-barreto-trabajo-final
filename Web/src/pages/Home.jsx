@@ -2,6 +2,7 @@ import DifficultySelector from "../components/DifficultySelector";
 import { useEffect, useState } from "react";
 import { getDifficulties } from "../services/difficultService";
 import Spinner from "../components/spinner/Spinner";
+import { toast, ToastContainer } from "react-toastify";
 const Home = () => {
     
   const [loading, setLoading] = useState(true); 
@@ -14,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     getDifficulties()
       .then((difficulties) => setDifficulties(difficulties))
-      .catch((error) => console.log(error))
+      .catch((error) => toast.error(error))
       .finally(() => {
         setLoading(false);
       });
@@ -28,6 +29,7 @@ const Home = () => {
 
     return (
         <>
+            <h1 className="m-5 text-uppercase">Wordle</h1>
             <DifficultySelector difficulties={difficulties}></DifficultySelector>
         </>
     );

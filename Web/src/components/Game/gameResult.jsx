@@ -13,14 +13,14 @@ const GameResult = ({ attempts }) => {
         <div>
             <h1>¡Ganaste!</h1>
             <Link to={`${ROUTES.HOME}`}>
-              <button className="list-group-item list-group-item-action">Volver a jugar</button>
+              <button className="m-3 btn btn-secondary">Volver a jugar</button>
             </Link>
           </div>
       ) : (
         <div>
           <h1>¡Perdiste!</h1>
           <Link to={`${ROUTES.HOME}`}>
-            <button className="list-group-item list-group-item-action">Volver a jugar</button>
+            <button className="m-3 btn btn-secondary">Volver a jugar</button>
           </Link>
         </div>
         ) 

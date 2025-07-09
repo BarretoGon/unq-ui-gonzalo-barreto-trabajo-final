@@ -17,7 +17,7 @@ const LetterGrid = ({attempts }) => {
                 : 'bg-secondary'
               return(
                     <span key={index}
-                      className={`${bgColor} letterGrid`}>
+                      className={`${bgColor} letterGrid border border-white`}>
                       {letter.letter} 
                   </span>
               )
