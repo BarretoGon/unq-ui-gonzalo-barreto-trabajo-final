@@ -47,7 +47,7 @@ const Game = () => {
      e.preventDefault();
 
      if (word.length !== gameSession.wordLenght) {
-       toast.error(`La palabra debe tener ${gameSession.wordLenght} letras`);
+       toast.error(`The word must have ${gameSession.wordLenght} letters`);
 
     }else{
       const answerBody = {
@@ -86,7 +86,7 @@ const Game = () => {
         </Link>
       </div>
 
-      <div className="container w-50 text-center">
+      <div className="container w-50 text-center text-white">
         <h1 className="fw-bold">Dificultad: {gameSession.difficulty.name}</h1>
         <h2 className="fw-bold">Palabra de {gameSession.wordLenght} letras</h2>
       </div>

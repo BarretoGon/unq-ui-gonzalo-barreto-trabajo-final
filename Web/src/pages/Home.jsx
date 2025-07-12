@@ -29,7 +29,7 @@ const Home = () => {
 
     return (
         <>
-            <h1 className="m-5 text-uppercase">Wordle</h1>
+            <h1 className="m-5 text-uppercase text-center fw-bold text-success">Wordle</h1>
             <DifficultySelector difficulties={difficulties}></DifficultySelector>
         </>
     );

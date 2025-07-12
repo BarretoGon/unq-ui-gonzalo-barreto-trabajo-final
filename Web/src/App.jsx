@@ -1,7 +1,7 @@
 
 import { ROUTES } from "./constants";
 import { BrowserRouter, Routes, Route } from "react-router";
-
+import "./style.css";
 import Home from "./pages/Home.jsx";
 import Game from "./pages/Game/Game.jsx";
 

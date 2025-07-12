@@ -11,14 +11,14 @@ const GameResult = ({ attempts }) => {
     {
       (lettersCorrect(attempts)) ? (
         <div>
-            <h1>¡Ganaste!</h1>
+            <h1 className=" text-warning">¡Ganaste!</h1>
             <Link to={`${ROUTES.HOME}`}>
               <button className="m-3 btn btn-secondary">Volver a jugar</button>
             </Link>
           </div>
       ) : (
         <div>
-          <h1>¡Perdiste!</h1>
+          <h1 className=" text-danger">¡Perdiste!</h1>
           <Link to={`${ROUTES.HOME}`}>
             <button className="m-3 btn btn-secondary">Volver a jugar</button>
           </Link>
