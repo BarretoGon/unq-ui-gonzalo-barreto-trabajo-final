@@ -31,6 +31,8 @@ const Home = () => {
         <>
             <h1 className="m-5 text-uppercase text-center fw-bold text-success">Wordle</h1>
             <DifficultySelector difficulties={difficulties}></DifficultySelector>
+
+            <ToastContainer />
         </>
     );
 }
