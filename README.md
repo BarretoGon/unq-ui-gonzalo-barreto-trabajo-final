@@ -16,7 +16,7 @@ Para jugar wordle, sigue estos pasos:
 
 ## Tecnologías utilizadas:
 
-Node.js
-React
-Vite
-Bootstrap
+-  Node.js
+-  React
+-  Vite
+-  Bootstrap
